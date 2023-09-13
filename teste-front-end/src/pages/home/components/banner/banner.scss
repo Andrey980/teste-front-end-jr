@@ -1,0 +1,81 @@
+@import "../../../../App.scss";
+
+.category-menu{
+  @include flex;
+  flex-direction: column;
+  width: 90vw;
+
+  ul{
+    @include grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    height: max-content;
+    // box-shadow: 0 -5px 10px $grey-color,
+    // 0 -5px 10px $grey-color;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+              
+
+    .category-itens{
+      @include flex;
+      padding: .8vw;
+      cursor: pointer;
+      color: $grey-color;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: $font-size-smaller;
+      
+      img{
+        width: 2vw;
+        height: 2vw;
+        padding-right: .8vw;
+      }
+    }
+
+    .category-itens:nth-child(6){
+      color: $red-color;
+      font-weight: bold;
+    }
+  }
+
+  .banner-container{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url("./assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include flex;
+    width: 100vw;
+    height: 26vw;
+
+    div{
+      width: 90vw;
+      @include flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1{
+        width: 50%;
+        line-height: 5vw;
+        font-size: 3.4vw;
+        color: $white-color;
+      }
+
+      p{
+        font-size: 2.5vw;
+        color: $white-color;
+        padding-bottom: 2.5vw;
+      }
+
+      button{
+        padding: 1vw 4vw;
+        font-size: $font-size-normal;
+        border: none;
+        background-color: $primary-pink-color;
+        color: $white-color;
+        border-radius: .38vw;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

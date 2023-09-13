@@ -1,0 +1,147 @@
+@import "../../../../App.scss";
+
+#header{
+  @include flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 7vw;
+  padding: 1vw 0;
+  // overflow-y: hidden;
+
+  .featured-banner{
+    width: 100%;
+    height: max-content;
+    padding: .4vw;
+    border-bottom: 1px solid $light-grey-color;
+
+    ul{
+      @include flex;
+      justify-content: space-evenly;
+
+      .banner-itens{
+        @include flex;
+        column-gap: .6vw;
+
+        img{
+          width: 1.5vw;
+          height: 1.5vw;
+        }
+
+        p{
+          font-size: $font-size-small;
+          color: $red-color;
+          font-weight: 600;
+
+          span{
+            color: $grey-p-color;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .banner-itens:first-child{
+        p{
+          color: $grey-p-color;
+
+          span{
+            color: $red-color;
+          }
+        }
+      }
+    }
+  }
+
+  .navegation{
+    @include flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: max-content;
+    padding: .4vw;
+    border-bottom: 1px solid $light-grey-color;
+
+    #logo{
+      @include flex;
+      width: max-content;
+
+      img{
+        width: 4vw;
+        height: 4vw;
+      }
+
+      span{
+        font-size: 1.9vw;
+        font-weight: bold;
+        color: $red-color;
+        text-transform: uppercase;
+      }
+    }
+
+    nav{
+      width: max-content;
+      height: max-content;
+      @include flex;
+
+      input{
+        width: 30vw;
+        padding: 1vw;
+        border: none;
+        border-radius: .4vw 0 0 .4vw;
+        background-color: $light-grey-color;
+      }
+
+      button{
+        @include flex;
+        border: none;
+        padding: .54vw;
+        background-color: $light-grey-color;
+        cursor: pointer;
+        border-radius: 0 .4vw .4vw 0;
+
+        img{
+          width: 1.9vw;
+          height: 1.9vw;
+        }
+      }
+    }
+
+    .icons{
+      width: max-content;
+      height: max-content;
+
+      ul{
+        @include flex;
+        column-gap: 2vw;
+
+        .icons-itens{
+          width: max-content;
+
+          button{
+            @include flex;
+            cursor: pointer;
+            border: none;
+            background-color: $white-color;
+
+            img{
+              width: 2vw;
+              height: 2vw;
+            }
+          }
+        }
+
+        .icons-itens:nth-child(3), .icons-itens:nth-child(4){
+          
+          button{
+
+            img{
+              width: 2.25vw;
+              height: 2.25vw;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}

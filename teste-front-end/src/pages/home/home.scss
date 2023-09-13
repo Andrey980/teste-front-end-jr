@@ -1,0 +1,8 @@
+@import "../../App.scss";
+
+.home{
+  @include flex;
+  flex-direction: column;
+  font-family: $font-family-default;
+}
+
