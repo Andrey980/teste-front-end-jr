@@ -4,9 +4,8 @@
   @include flex;
   flex-direction: column;
   width: 90vw;
-  height: 7vw;
-  padding: 1vw 0;
-  // overflow-y: hidden;
+  height: max-content;
+  padding: .2vw 0 0;
 
   .featured-banner{
     width: 100%;
@@ -56,8 +55,9 @@
     width: 100%;
     justify-content: space-evenly;
     height: max-content;
-    padding: .4vw;
+    // padding: ;
     border-bottom: 1px solid $light-grey-color;
+    padding: .5vw 0;
 
     #logo{
       @include flex;

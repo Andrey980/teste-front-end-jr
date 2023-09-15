@@ -1,0 +1,55 @@
+@import '../../../../App.scss';
+
+.main-content{
+  @include flex;
+  width: 90vw;
+  height: max-content;
+  padding: 2.5vw 0;
+
+  ul{
+    @include grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 4vw;
+    justify-content: space-between;
+
+    .content-itens{
+      @include flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1vw;
+      // border: 1px solid #000;
+
+      button{
+        width: 100%;
+        height: 8vw;
+        border: none;
+        box-shadow: 0vw 0vw .5vw $grey-p-color;
+        cursor: pointer;
+        
+        img{
+          width: 4vw; 
+          height: 4vw;
+          filter: $dark-grey-color-filter;
+        }
+      }
+
+      .active-button{
+        img{
+          filter: $red-color-filter;
+        }
+      }
+
+      p{
+        color: $dark-grey-color;
+        font-weight: bold;
+        font-size: $font-size-small;
+      }
+
+      .activate-p{
+        color: $primary-pink-color;
+      }
+    }
+  }
+}
