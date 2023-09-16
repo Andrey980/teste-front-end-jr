@@ -1,0 +1,112 @@
+@import '../../../../../../App.scss';
+
+.modal{
+  position: absolute;
+  
+  .active-modal {
+    overflow-y: hidden;
+  }
+
+  .modal, .overlay {
+    width: 200vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+
+.overlay {
+    background: rgba(49,49,49,0.4);
+    z-index: 1;
+}
+
+.modal-content-product {
+    position: absolute;
+    top: -60vw;
+    left: 0;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: $white-color;
+    padding: 2vw;
+    border-radius: .1vw;
+    width: 50vw;
+    @include flex;
+    z-index: 2;
+
+    .modal-img{
+      width: 20vw;
+      height: 15vw;
+      padding: 1.5vw
+    }
+
+    .wrap{
+      @include flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 1.5vw;
+      padding-left: 2vw;
+
+      h2{
+        font-weight: lighter
+      }
+
+      .modal-price{
+        font-size: $font-size-medium;
+        font-weight: bold;
+      }
+
+      .modal-description{
+        font-size: $font-size-small;
+        width: 85%;
+        font-weight: 500;
+      }
+
+      .modal-moreInfo{
+        font-size: $font-size-small;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .modal-counter{
+        @include flex;
+        justify-content: space-between;
+        border: 1px solid $black-color;
+        border-radius: .4vw;
+        width: 30%;
+        height: 3vw;
+        padding: .5vw;
+
+       button{
+          @include flex;
+          width: 30%;
+          padding: 0;
+          background-color: $white-color;
+        }
+      }
+
+      button{
+        width: 73%;
+        padding: .9vw 0;
+        border: none;
+        border-radius: .5vw;
+        background-color: $primary-pink-color;
+        color: $white-color;
+        font-weight: bold;
+        font-size: $font-size-card;
+        cursor: pointer;
+        
+      }
+    }
+    
+}
+
+.close-button {
+    position: absolute;
+    width: 2vw;
+    top: .8vw;
+    right: 1vw;
+    cursor: pointer;
+}
+}

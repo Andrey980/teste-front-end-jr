@@ -8,8 +8,10 @@ import Sports from './assets/Sports.svg'
 import Tools from './assets/Tools.svg'
 import Whiskey from './assets/whiskey.svg'
 import Style from './assets/Style.svg'
+import Line from './assets/Line.svg'
 
 import Tech from './components/Tech'
+import ProductCarousel from './components/ProductCarousel'
 
 function MainContent() {
   const [tecnologia, setTecnologia] = useState(false)
@@ -22,10 +24,10 @@ function MainContent() {
     <main className="main-content">
       <ul>
         <li className="content-itens">
-          <button onClick={handleClick}>
+          <button onClick={handleClick} className="active-button">
             <img src={Monitor} alt="" />
           </button>
-          <p>Tecnologia</p>
+          <p className="activate-p">Tecnologia</p>
         </li>
 
         <li className="content-itens">
@@ -72,7 +74,9 @@ function MainContent() {
       </ul>
 
       <section className="show-components">
-        Produtos Relacionados
+        <h1>Produtos relacionados</h1>
+        <img src={Line} alt="" id="line-right" />
+        <img src={Line} alt="" id="line-left" />
         {tecnologia && <Tech />}
       </section>
     </main>

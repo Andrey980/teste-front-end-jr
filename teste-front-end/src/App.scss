@@ -32,17 +32,22 @@ $font-family-default: 'Urbanist', sans-serif;
 // font-size
 $font-size-smaller: 0.8vw;
 $font-size-small: 0.9vw;
+$font-size-card: 1.1vw;
+$font-size-footer: 1.6vw;
 $font-size-normal: 1.2vw;
+$font-size-medium: 1.5vw;
 $font-size-large: 2vw;
 
 
 
 //color variables
 $black-color: #000;
+$footer-color: #2A2A2A;
 $blue-color: #023C77;
 $blue-color-filter: invert(16%) sepia(32%) saturate(5567%) hue-rotate(198deg) brightness(89%) contrast(98%); 
 $grey-color: #888;
 $grey-p-color: #bbb;
+$grey-p-color-filter: invert(100%) sepia(0%) saturate(5018%) hue-rotate(183deg) brightness(79%) contrast(76%);
 $grey-color-filter: invert(75%) sepia(2%) saturate(17%) hue-rotate(45deg) brightness(110%) contrast(91%);
 $dark-grey-color: #4E4E4E;
 $dark-grey-color-filter: invert(28%) sepia(6%) saturate(8%) hue-rotate(343deg) brightness(94%) contrast(85%);
