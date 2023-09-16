@@ -6,4 +6,5 @@ Segue abaixo as instruções para a execução do teste.
 - Acesse a pasta teste-front-end
 - Abra o terminal e execute "Npm install"
 - Ainda no terminal utilize o "Npm run dev" para iniciar a aplicação.
+- Na aplicação, clique no botão "Tecnologia" para abrir a vitrine.
 
